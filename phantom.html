@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="cursor-light" id="gate-light" aria-hidden="true"></div>
+  <canvas class="cursor-dust" id="gate-dust" aria-hidden="true"></canvas>
   <header class="nav">
     <a class="logo" href="index.html">오늘 밤</a>
     <nav>
@@ -23,16 +25,18 @@
     <a class="nav-cta" href="index.html">홈</a>
   </header>
 
-  <section class="panel">
+  <section class="panel hero">
     <img class="panel-bg" src="img/chandelier.jpg" alt="오페라의 유령 무대 샹들리에">
     <div class="panel-shade"></div>
-    <div class="panel-copy">
-      <h1>오페라의 유령</h1>
-      <p>The Phantom of the Opera</p>
-    </div>
-    <div class="panel-cta">
-      <a class="btn btn-fill" href="#story">이야기</a>
-      <a class="btn btn-ghost" href="#numbers">오늘 넘버</a>
+    <div class="panel-front">
+      <div class="panel-copy">
+        <h1>오페라의 유령</h1>
+        <p>The Phantom of the Opera</p>
+      </div>
+      <div class="panel-cta">
+        <a class="btn btn-fill" href="#story">이야기</a>
+        <a class="btn btn-ghost" href="#numbers">오늘 넘버</a>
+      </div>
     </div>
   </section>
 
@@ -57,12 +61,14 @@
     </figure>
   </section>
 
-  <section class="panel short" id="acts">
+  <section class="panel short low" id="acts">
     <img class="panel-bg" src="img/hmt.jpg" alt="">
     <div class="panel-shade"></div>
-    <div class="panel-copy">
-      <h1>두 막</h1>
-      <p>불이 켜진 돔, 그리고 가면무도회</p>
+    <div class="panel-front">
+      <div class="panel-copy">
+        <h1>두 막</h1>
+        <p>불이 켜진 돔, 그리고 가면무도회</p>
+      </div>
     </div>
   </section>
 
@@ -126,16 +132,18 @@
     </ol>
   </section>
 
-  <section class="panel" id="house">
+  <section class="panel low" id="house">
     <img class="panel-bg" src="img/stage.jpg" alt="오페라의 유령 무대">
     <div class="panel-shade"></div>
-    <div class="panel-copy">
-      <h1>객석</h1>
-      <p>박수는 막이 내린 뒤에. 촬영은 없습니다.</p>
-    </div>
-    <div class="panel-cta">
-      <a class="btn btn-fill" href="index.html">홈으로</a>
-      <a class="btn btn-ghost" href="#story">처음부터</a>
+    <div class="panel-front">
+      <div class="panel-copy">
+        <h1>객석</h1>
+        <p>박수는 막이 내린 뒤에. 촬영은 없습니다.</p>
+      </div>
+      <div class="panel-cta">
+        <a class="btn btn-fill" href="index.html">홈으로</a>
+        <a class="btn btn-ghost" href="#story">처음부터</a>
+      </div>
     </div>
   </section>
 

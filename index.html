@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="cursor-light" id="gate-light" aria-hidden="true"></div>
+  <canvas class="cursor-dust" id="gate-dust" aria-hidden="true"></canvas>
   <header class="nav">
     <a class="logo" href="index.html">오늘 밤</a>
     <nav>
@@ -24,55 +26,63 @@
   </header>
 
   <main>
-    <section class="panel">
+    <section class="panel hero">
       <img class="panel-bg" src="img/hmt.jpg" alt="">
       <div class="panel-shade"></div>
-      <div class="panel-copy">
-        <h1>오페라의 유령</h1>
-        <p>오늘 밤, 한 회 · 제 9막</p>
-      </div>
-      <div class="panel-cta">
-        <a class="btn btn-fill" href="phantom.html">입장</a>
-        <a class="btn btn-ghost" href="phantom.html#story">자세히 알아보기</a>
+      <div class="panel-front">
+        <div class="panel-copy">
+          <h1>오페라의 유령</h1>
+          <p>오늘 밤, 한 회 · 제 9막</p>
+        </div>
+        <div class="panel-cta">
+          <a class="btn btn-fill" href="phantom.html">입장</a>
+          <a class="btn btn-ghost" href="phantom.html#story">자세히 알아보기</a>
+        </div>
       </div>
     </section>
 
-    <section class="panel">
+    <section class="panel low">
       <img class="panel-bg" src="img/chandelier.jpg" alt="">
       <div class="panel-shade"></div>
-      <div class="panel-copy">
-        <h1>제1막</h1>
-        <p>불이 켜진 돔 · 약 70분</p>
-      </div>
-      <div class="panel-cta">
+      <div class="panel-front">
+        <div class="panel-copy">
+          <h1>제1막</h1>
+          <p>불이 켜진 돔 · 약 70분</p>
+        </div>
+        <div class="panel-cta">
         <a class="btn btn-fill" href="phantom.html#acts">막 보기</a>
         <a class="btn btn-ghost" href="phantom.html#numbers">넘버</a>
+        </div>
       </div>
     </section>
 
-    <section class="panel">
+    <section class="panel low">
       <img class="panel-bg" src="img/stairs.jpg" alt="">
       <div class="panel-shade"></div>
-      <div class="panel-copy">
-        <h1>제2막</h1>
-        <p>가면무도회 · 인터미션 20분 뒤</p>
-      </div>
-      <div class="panel-cta">
+      <div class="panel-front">
+        <div class="panel-copy">
+          <h1>제2막</h1>
+          <p>가면무도회 · 인터미션 20분 뒤</p>
+        </div>
+        <div class="panel-cta">
         <a class="btn btn-fill" href="phantom.html#acts">막 보기</a>
         <a class="btn btn-ghost" href="phantom.html#cast">인물</a>
+        </div>
       </div>
     </section>
 
-    <section class="panel">
+    <section class="panel low">
       <img class="panel-bg" src="img/stage.jpg" alt="">
       <div class="panel-shade"></div>
-      <div class="panel-copy">
-        <h1>객석</h1>
-        <p>약 150분 · 7세 이상</p>
-      </div>
-      <div class="panel-cta">
+      <div class="panel-front">
+        <div class="panel-copy">
+          <h1>객석</h1>
+          <p>약 150분 · 7세 이상</p>
+        </div>
+        <div class="panel-cta">
         <a class="btn btn-fill" href="phantom.html">프로그램</a>
         <a class="btn btn-ghost" href="phantom.html#korea">한국에서</a>
+        </div>
       </div>
     </section>
   </main>
@@ -82,6 +92,7 @@
     <p>사진 Wikimedia Commons</p>
     <p>© 2026</p>
   </footer>
+  <a class="float-cta" href="phantom.html">입장하기</a>
   <script src="app.js"></script>
 </body>
 </html>
