@@ -35,15 +35,21 @@
   var enter = document.getElementById("enter");
   var curtain = document.getElementById("curtain");
   if (enter) {
-    enter.classList.add("ready");
     enter.addEventListener("click", function (e) {
       if (reduce || !curtain) return;
       e.preventDefault();
       var href = enter.getAttribute("href");
-      curtain.classList.add("on", "closing");
+      var hero = document.querySelector(".gate-hero");
+      if (hero) hero.classList.add("dimming");
+      curtain.classList.add("on");
+      window.requestAnimationFrame(function () {
+        window.requestAnimationFrame(function () {
+          curtain.classList.add("closing");
+        });
+      });
       window.setTimeout(function () {
         window.location.href = href;
-      }, 720);
+      }, 1850);
     });
   }
 
