@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Song+Myung&display=swap">
-  <link rel="stylesheet" href="/assets/style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="stage" aria-hidden="true">
@@ -19,6 +19,7 @@
     <div class="grain" id="grain"></div>
     <div class="vignette"></div>
   </div>
+
   <main class="sheet">
     <p class="clock" aria-label="서울 시각">
       <time id="seoul-time" datetime="">--:--</time>
@@ -35,9 +36,11 @@
     <button type="button" id="breathe" aria-describedby="breathe-hint">다시 심호기</button>
     <p id="breathe-hint" class="sr-only">주변 빛과 입자, 필름 그레인을 다시 움직입니다.</p>
   </main>
+
   <footer>
-    <p>한 자리에 앉아 만듬</p>
+    <p>한 자리에 앉아 만듦</p>
   </footer>
-  <script src="/assets/app.js" defer></script>
+
+  <script src="app.js" defer></script>
 </body>
 </html>
