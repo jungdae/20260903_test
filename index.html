@@ -4,108 +4,31 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="dark">
-  <meta name="description" content="오늘 밤 — 서울, 야간만 여는 작은 다이닝 룸.">
+  <meta name="description" content="오늘 밤 — 뮤지컬 오페라의 유령.">
   <title>오늘 밤</title>
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;600&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;500;700&display=swap">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <div class="cursor" id="cursor" aria-hidden="true"></div>
-
-  <header class="nav" id="nav">
-    <a class="logo" href="#top">오늘 밤</a>
-    <nav>
-      <a href="#room">공간</a>
-      <a href="#course">코스</a>
-      <a href="#hours">시간</a>
-    </nav>
-    <p class="nav-time"><time id="seoul-time">--:--</time></p>
+<body class="gate">
+  <img class="gate-bg" src="img/hmt.jpg" alt="">
+  <div class="gate-dim"></div>
+  <header class="gate-top">
+    <p>서울 · 오늘 한 회</p>
+    <p><time id="seoul-time">--:--</time></p>
   </header>
-
-  <main id="top">
-    <section class="hero">
-      <img class="hero-img" src="img/hero.jpg" alt="낮은 조명의 바 카운터">
-      <div class="hero-dim"></div>
-      <div class="hero-copy">
-        <p class="eyebrow">Seoul · Night dining</p>
-        <h1>오늘 밤</h1>
-        <p class="hero-sub">여덟 석. 불은 낮게, 말은 짧게.</p>
-      </div>
-      <a class="scroll" href="#room">아래로</a>
-    </section>
-
-    <section class="intro" id="room">
-      <div class="intro-text reveal">
-        <p class="num">01</p>
-        <h2>문을 닫은 뒤에야<br>열리는 방.</h2>
-        <p>거리는 이미 식을 대로 식었고, 창가 두 번째 의자만 아직 온기를 남겨 둡니다. 예약은 전일까지, 당일 빈자리는 없습니다.</p>
-      </div>
-      <figure class="intro-photo reveal">
-        <img src="img/room.jpg" alt="정갈하게 세팅된 다이닝 테이블">
-        <figcaption>한남, 지하 한 층 · 간판 없음</figcaption>
-      </figure>
-    </section>
-
-    <section class="course" id="course">
-      <header class="reveal">
-        <p class="num">02</p>
-        <h2>코스</h2>
-        <p class="lede">계절이 바뀌면 메뉴도 바뀝니다. 아래는 이번 주의 뼈대입니다.</p>
-      </header>
-      <ol>
-        <li class="reveal">
-          <span>01</span>
-          <div>
-            <h3>첫 잔</h3>
-            <p>샴페인과 차가운 배. 입안을 깨우는 일만 합니다.</p>
-          </div>
-          <em>12 min</em>
-        </li>
-        <li class="reveal">
-          <span>02</span>
-          <div>
-            <h3>불</h3>
-            <p>숯에 올린 생선, 기름만 남긴 채소. 간은 거의 하지 않습니다.</p>
-          </div>
-          <em>28 min</em>
-        </li>
-        <li class="reveal">
-          <span>03</span>
-          <div>
-            <h3>마지막 온기</h3>
-            <p>따뜻한 국물과 한 잔. 계산서는 말없이 놓입니다.</p>
-          </div>
-          <em>—</em>
-        </li>
-      </ol>
-    </section>
-
-    <section class="close" id="hours">
-      <img src="img/glass.jpg" alt="어두운 바의 글라스">
-      <div class="close-dim"></div>
-      <div class="close-panel reveal">
-        <p class="num">03</p>
-        <h2>시간</h2>
-        <dl>
-          <div><dt>화 — 토</dt><dd>19:00 – 24:00</dd></div>
-          <div><dt>일 · 월</dt><dd>휴무</dd></div>
-          <div><dt>라스트</dt><dd>22:30</dd></div>
-        </dl>
-        <p class="note">좌석 8. 전화 예약만 받습니다.<br>02-000-0000</p>
-      </div>
-    </section>
+  <aside class="gate-spine">뮤지컬</aside>
+  <main class="gate-main">
+    <p class="gate-kicker">제9막 · 야간</p>
+    <h1>오늘 밤</h1>
+    <p class="gate-line"></p>
+    <p class="gate-sub">문을 열면, 파리 오페라의 지하가 기다립니다.</p>
+    <a class="enter" href="phantom.html">입장</a>
   </main>
-
-  <footer class="foot">
-    <p>오늘 밤</p>
-    <p>서울 용산구 · 간판 없는 문</p>
-    <p>© 2026</p>
-  </footer>
-
+  <footer class="gate-foot">오페라의 유령</footer>
   <script src="app.js"></script>
 </body>
 </html>
