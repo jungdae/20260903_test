@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>오늘 밤</title>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Song+Myung&display=swap">
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+  <div class="stage" aria-hidden="true">
+    <canvas id="field"></canvas>
+    <div class="fog" id="fog"></div>
+    <div class="grain" id="grain"></div>
+    <div class="vignette"></div>
+  </div>
+  <main class="sheet">
+    <p class="clock" aria-label="서울 시각">
+      <time id="seoul-time" datetime="">--:--</time>
+      <span class="clock-note">서울</span>
+    </p>
+    <h1>오늘 밤</h1>
+    <p class="lead">잠시 머물러, 이 화면만.</p>
+    <ul class="verse">
+      <li>나트륨등이 골목을 한 줌씩 데운다.</li>
+      <li>창문마다 다른 시각이 켜져 있다.</li>
+      <li>숨을 고르면 먼 엔진 소리만 남는다.</li>
+      <li>손가락이 화면을 떠나지 않는다.</li>
+    </ul>
+    <button type="button" id="breathe" aria-describedby="breathe-hint">다시 심호기</button>
+    <p id="breathe-hint" class="sr-only">주변 빛과 입자, 필름 그레인을 다시 움직입니다.</p>
+  </main>
+  <footer>
+    <p>한 자리에 앉아 만듬</p>
+  </footer>
+  <script src="/assets/app.js" defer></script>
+</body>
+</html>
