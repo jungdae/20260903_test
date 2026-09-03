@@ -7,13 +7,10 @@
   <meta name="description" content="오늘 밤의 공연, 뮤지컬 오페라의 유령.">
   <title>오페라의 유령 — 오늘 밤</title>
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600;700&display=swap">
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="show">
+<body>
   <header class="nav">
     <a class="logo" href="index.html">오늘 밤</a>
     <nav>
@@ -23,64 +20,72 @@
       <a href="#numbers">넘버</a>
       <a href="#korea">한국</a>
     </nav>
-    <a class="back" href="index.html">문 밖</a>
+    <a class="nav-cta" href="index.html">홈</a>
   </header>
 
-  <section class="hero">
-    <img src="img/chandelier.jpg" alt="오페라의 유령 무대 샹들리에">
-    <div class="hero-dim"></div>
-    <div class="hero-copy">
-      <p class="eyebrow">오늘 공연 · 뮤지컬 · 제 9막</p>
+  <section class="panel">
+    <img class="panel-bg" src="img/chandelier.jpg" alt="오페라의 유령 무대 샹들리에">
+    <div class="panel-shade"></div>
+    <div class="panel-copy">
       <h1>오페라의 유령</h1>
-      <p class="hero-sub">The Phantom of the Opera</p>
-      <ul class="meta">
-        <li>앤드루 로이드 웨버</li>
-        <li>작사 찰스 하트 · 리처드 스틸고어</li>
-        <li>원작 가스통 르루</li>
-        <li>약 150분 · 인터미션 20분</li>
-      </ul>
+      <p>The Phantom of the Opera</p>
+    </div>
+    <div class="panel-cta">
+      <a class="btn btn-fill" href="#story">이야기</a>
+      <a class="btn btn-ghost" href="#numbers">오늘 넘버</a>
     </div>
   </section>
 
-  <section class="program" id="story">
-    <div class="program-text reveal">
-      <p class="num">01</p>
+  <section class="specs" aria-label="공연 정보">
+    <ul>
+      <li><b>150분</b><span>러닝타임</span></li>
+      <li><b>2막</b><span>인터미션 20분</span></li>
+      <li><b>7세↑</b><span>관람</span></li>
+      <li><b>제 9막</b><span>오늘 한 회</span></li>
+    </ul>
+  </section>
+
+  <section class="block" id="story">
+    <div class="block-text">
+      <p class="kicker">이야기</p>
       <h2>오늘 무대</h2>
       <p>파리 오페라 하우스의 지하. 태어날 때부터 얼굴을 숨긴 작곡가가 살고 있습니다. 그는 코러스의 크리스틴 다에에게 노래를 가르치고, 극장은 점점 그의 악보가 됩니다.</p>
       <p>사랑은 곧 집착이 됩니다. 후원자 라울이 옛 약속을 기억해 내고, 가면무도회가 열리면 유령은 다시 계단을 내려옵니다. 결말은 적지 않습니다. 오늘 밤, 객석에서 듣기를.</p>
     </div>
-    <figure class="reveal">
+    <figure>
       <img src="img/theatre.jpg" alt="무대 위 샹들리에">
-      <figcaption>무대 장치 · 샹들리에</figcaption>
     </figure>
   </section>
 
-  <section class="acts" id="acts">
-    <header class="reveal">
-      <p class="num">02</p>
-      <h2>두 막</h2>
-    </header>
-    <div class="act-grid">
-      <article class="reveal">
-        <p class="act-no">제1막</p>
-        <h3>불이 켜진 돔</h3>
-        <p>경매장의 뮤직 박스에서 시간이 접힙니다. 젊은 라울의 기억 속으로, 샹들리에가 아직 빛나던 극장이 돌아옵니다. 크리스틴이 무대에 서고, 유령의 수업이 시작됩니다.</p>
-      </article>
-      <article class="reveal">
-        <p class="act-no">제2막</p>
-        <h3>가면무도회</h3>
-        <p>새해의 축제가 한창일 때 붉은 죽음이 계단을 내려옵니다. 새 오페라의 악보가 내던져지고, 극장은 그의 규칙을 따를 것인지 묻게 됩니다.</p>
-      </article>
+  <section class="panel short" id="acts">
+    <img class="panel-bg" src="img/hmt.jpg" alt="">
+    <div class="panel-shade"></div>
+    <div class="panel-copy">
+      <h1>두 막</h1>
+      <p>불이 켜진 돔, 그리고 가면무도회</p>
     </div>
   </section>
 
-  <section class="split" id="cast">
-    <figure class="reveal">
+  <section class="pair">
+    <article>
+      <p class="kicker">제1막</p>
+      <h3>불이 켜진 돔</h3>
+      <p>경매장의 뮤직 박스에서 시간이 접힙니다. 젊은 라울의 기억 속으로, 샹들리에가 아직 빛나던 극장이 돌아옵니다. 크리스틴이 무대에 서고, 유령의 수업이 시작됩니다.</p>
+    </article>
+    <article>
+      <p class="kicker">제2막</p>
+      <h3>가면무도회</h3>
+      <p>새해의 축제가 한창일 때 붉은 죽음이 계단을 내려옵니다. 새 오페라의 악보가 내던져지고, 극장은 그의 규칙을 따를 것인지 묻게 됩니다.</p>
+    </article>
+  </section>
+
+  <section class="block reverse" id="cast">
+    <figure>
       <img src="img/stairs.jpg" alt="파리 오페라 가르니에 대계단">
     </figure>
-    <div class="reveal">
-      <p class="num">03</p>
-      <h2>인물</h2>
+    <div class="block-text">
+      <p class="kicker">인물</p>
+      <h2>오늘 객석에 오르는 이름</h2>
       <dl>
         <div><dt>유령</dt><dd>극장 지하의 작곡가. 얼굴을 가리고, 목소리만 남긴 사람.</dd></div>
         <div><dt>크리스틴 다에</dt><dd>코러스에서 프리마돈나로. 그의 수업을 받은 소프라노.</dd></div>
@@ -92,48 +97,45 @@
     </div>
   </section>
 
-  <section class="numbers" id="numbers">
-    <header class="reveal">
-      <p class="num">04</p>
-      <h2>오늘 듣게 될 노래</h2>
-      <p class="lede">가사는 무대에 맡기고, 이름만 적어 둡니다.</p>
-    </header>
+  <section class="sheet" id="numbers">
+    <p class="kicker">넘버</p>
+    <h2>오늘 듣게 될 노래</h2>
+    <p class="note">가사는 무대에 맡기고, 이름만 적어 둡니다.</p>
     <ol>
-      <li class="reveal"><b>01</b><span>Think of Me</span><em>크리스틴</em></li>
-      <li class="reveal"><b>02</b><span>Angel of Music</span><em>크리스틴 · 멕</em></li>
-      <li class="reveal"><b>03</b><span>The Phantom of the Opera</span><em>유령 · 크리스틴</em></li>
-      <li class="reveal"><b>04</b><span>The Music of the Night</span><em>유령</em></li>
-      <li class="reveal"><b>05</b><span>All I Ask of You</span><em>라울 · 크리스틴</em></li>
-      <li class="reveal"><b>06</b><span>Masquerade</span><em>2막 앙상블</em></li>
-      <li class="reveal"><b>07</b><span>Wishing You Were Somehow Here Again</span><em>크리스틴</em></li>
-      <li class="reveal"><b>08</b><span>The Point of No Return</span><em>유령 · 크리스틴</em></li>
+      <li><b>01</b><span>Think of Me</span><em>크리스틴</em></li>
+      <li><b>02</b><span>Angel of Music</span><em>크리스틴 · 멕</em></li>
+      <li><b>03</b><span>The Phantom of the Opera</span><em>유령 · 크리스틴</em></li>
+      <li><b>04</b><span>The Music of the Night</span><em>유령</em></li>
+      <li><b>05</b><span>All I Ask of You</span><em>라울 · 크리스틴</em></li>
+      <li><b>06</b><span>Masquerade</span><em>2막 앙상블</em></li>
+      <li><b>07</b><span>Wishing You Were Somehow Here Again</span><em>크리스틴</em></li>
+      <li><b>08</b><span>The Point of No Return</span><em>유령 · 크리스틴</em></li>
     </ol>
   </section>
 
-  <section class="paper" id="korea">
-    <div class="paper-inner reveal">
-      <p class="num ink">05</p>
-      <h2>한국에서</h2>
-      <p class="lede ink">라이선스와 내한이 번갈아 열렸습니다. 오늘 밤은 그 계보를 잇는 한 회입니다.</p>
-      <ol class="timeline">
-        <li><span>2001</span>LG아트센터 · 라이선스 초연</li>
-        <li><span>2005</span>예술의전당 오페라극장 · 첫 내한</li>
-        <li><span>2009</span>샤롯데씨어터 · 한국어 재연</li>
-        <li><span>2012</span>블루스퀘어 · 25주년 내한</li>
-        <li><span>2023</span>부산 · 서울 · 대구 삼연</li>
-      </ol>
-    </div>
+  <section class="sheet light" id="korea">
+    <p class="kicker">한국</p>
+    <h2>한국에서</h2>
+    <p class="note">라이선스와 내한이 번갈아 열렸습니다. 오늘 밤은 그 계보를 잇는 한 회입니다.</p>
+    <ol class="years">
+      <li><span>2001</span>LG아트센터 · 라이선스 초연</li>
+      <li><span>2005</span>예술의전당 오페라극장 · 첫 내한</li>
+      <li><span>2009</span>샤롯데씨어터 · 한국어 재연</li>
+      <li><span>2012</span>블루스퀘어 · 25주년 내한</li>
+      <li><span>2023</span>부산 · 서울 · 대구 삼연</li>
+    </ol>
   </section>
 
-  <section class="end">
-    <img src="img/stage.jpg" alt="오페라의 유령 무대">
-    <div class="end-dim"></div>
-    <div class="end-copy reveal">
-      <p class="num">06</p>
-      <h2>객석</h2>
-      <p>러닝타임 약 150분, 인터미션 20분. 7세 이상. 지각은 1막이 끝난 뒤에만 입장합니다.</p>
+  <section class="panel" id="house">
+    <img class="panel-bg" src="img/stage.jpg" alt="오페라의 유령 무대">
+    <div class="panel-shade"></div>
+    <div class="panel-copy">
+      <h1>객석</h1>
       <p>박수는 막이 내린 뒤에. 촬영은 없습니다.</p>
-      <a class="enter light" href="index.html">문을 닫고 나가기</a>
+    </div>
+    <div class="panel-cta">
+      <a class="btn btn-fill" href="index.html">홈으로</a>
+      <a class="btn btn-ghost" href="#story">처음부터</a>
     </div>
   </section>
 
