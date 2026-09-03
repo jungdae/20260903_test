@@ -4,43 +4,46 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="dark">
+  <meta name="description" content="오늘 밤, 문을 닫은 도시의 한쪽.">
   <title>오늘 밤</title>
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Song+Myung&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;600&display=swap">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="stage" aria-hidden="true">
-    <canvas id="field"></canvas>
-    <div class="fog" id="fog"></div>
-    <div class="grain" id="grain"></div>
-    <div class="vignette"></div>
+  <div class="atmosphere" aria-hidden="true">
+    <div class="wash"></div>
+    <div class="light" id="light"></div>
+    <div class="grain"></div>
+    <div class="frame"></div>
   </div>
 
-  <main class="sheet">
-    <p class="clock" aria-label="서울 시각">
-      <time id="seoul-time" datetime="">--:--</time>
-      <span class="clock-note">서울</span>
-    </p>
+  <header class="top">
+    <p class="mark">Tonight</p>
+    <p class="clock"><time id="seoul-time" datetime="">—:—</time><span>Seoul</span></p>
+  </header>
+
+  <aside class="spine" aria-hidden="true">Private room · No. 09</aside>
+
+  <main class="stage">
+    <p class="kicker">Admission by stillness</p>
     <h1>오늘 밤</h1>
-    <p class="lead">잠시 머물러, 이 화면만.</p>
-    <ul class="verse">
-      <li>나트륨등이 골목을 한 줌씩 데운다.</li>
-      <li>창문마다 다른 시각이 켜져 있다.</li>
-      <li>숨을 고르면 먼 엔진 소리만 남는다.</li>
-      <li>손가락이 화면을 떠나지 않는다.</li>
-    </ul>
-    <button type="button" id="breathe" aria-describedby="breathe-hint">다시 심호기</button>
-    <p id="breathe-hint" class="sr-only">주변 빛과 입자, 필름 그레인을 다시 움직입니다.</p>
+    <p class="rule" aria-hidden="true"></p>
+    <p class="lede">문을 닫은 도시에서, 불 하나만 남겨 둔 방.</p>
+    <p class="body">창 너머 거리는 이미 식을 대로 식었고,<br>잔에 남은 온기만 아직 말을 고르고 있다.</p>
+    <button type="button" id="enter">입장</button>
   </main>
 
-  <footer>
-    <p>한 자리에 앉아 만듦</p>
+  <footer class="bottom">
+    <p><span>시각</span>야간 한정</p>
+    <p><span>장소</span>창가, 두 번째 의자</p>
+    <p><span>복장</span>소리 내지 않을 것</p>
   </footer>
 
+  <div class="veil" id="veil" hidden></div>
   <script src="app.js" defer></script>
 </body>
 </html>
