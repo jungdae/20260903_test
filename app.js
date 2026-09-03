@@ -32,27 +32,6 @@
     }
   }
 
-  var enter = document.getElementById("enter");
-  var curtain = document.getElementById("curtain");
-  if (enter) {
-    enter.addEventListener("click", function (e) {
-      if (reduce || !curtain) return;
-      e.preventDefault();
-      var href = enter.getAttribute("href");
-      var hero = document.querySelector(".gate-hero");
-      if (hero) hero.classList.add("dimming");
-      curtain.classList.add("on");
-      window.requestAnimationFrame(function () {
-        window.requestAnimationFrame(function () {
-          curtain.classList.add("closing");
-        });
-      });
-      window.setTimeout(function () {
-        window.location.href = href;
-      }, 1850);
-    });
-  }
-
   var light = document.getElementById("gate-light");
   var fine = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
   if (light && fine && !reduce) {
